@@ -1,5 +1,5 @@
 # Lambda-Calculus
-Collection of mini projects exploring the mathematical logic and language design behind lambda calulus. These are mostly written in python, other languages may be added later. Most functions have the goal of being one-liners and are practices of 'code-golf'. Improvements to the functions maybe be added later on.
+Collection of mini projects exploring the mathematical logic and language design behind lambda calulus. These are mostly written in python, other languages may be added later. Most functions have the goal of being one-liners and are practices of 'code-golf'. Improvements to the functions may be added later on.
 
 
 ## Equation Finder
@@ -15,3 +15,7 @@ Inefficient but logically satisfying way of looping through all numbers staring 
 
 ## Factorial
 Recusive or iterative methods of returnung a factorial of a given number. First and simplest project in this collection, done as an introduction to applying lambda calculus logic in a typed program
+
+
+## Church Numerals
+Implementation of church numerals, common logic gates and arithmetic as python functions. These can be used as building blocks for longer lambda calulus finctions
