@@ -1,4 +1,4 @@
-# My addtions to Equation-finder
+# My addtions to the Equation-finder functions
 
 # - 175 chars (uses eval, recursion)
 func5 = (lambda x: x(x))(lambda x: lambda n, m = '1', c = 2: (print(m) if eval(m) == n else ()) if c > 9 else any(x(x)(n, m + i + str(c), c+1) for i in ['+', '-', '']))
