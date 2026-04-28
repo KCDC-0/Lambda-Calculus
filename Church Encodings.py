@@ -22,6 +22,7 @@ and_gate = lambda x, y: x(y)(f)
 or_gate = lambda x, y: x(t)(y)
 not_gate = lambda x: x(f)(t)
 
+if_then_else = lambda p: lambda a: lambda b: p(a)(b)
 void = lambda x: x
 
 # Pairs and tuples
