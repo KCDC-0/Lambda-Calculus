@@ -29,6 +29,8 @@ Inefficient but logically satisfying way of looping through all numbers starting
 ## Factorial
 Recursive or iterative methods of returning a factorial of a given number. First and simplest project in this collection, done as an introduction to applying lambda calculus logic in a typed program
 
+Also includes a scheme implementation
+
 
 ## Church Encodings
 Implementation of church numerals, common logic gates, and basic arithmetic as python functions. These can be used as building blocks for longer lambda calculus functions
