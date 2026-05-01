@@ -31,6 +31,11 @@ Recursive or iterative methods of returning a factorial of a given number. First
 
 Also includes a scheme implementation
 
+## Fibonacci
+Recursive or iterative methods of returning the nth fibonacci term. Another simple intro to recursion
+
+Also includes a scheme implementation
+cred to Irfan
 
 ## Church Encodings
 Implementation of church numerals, common logic gates, and basic arithmetic as python functions. These can be used as building blocks for longer lambda calculus functions
