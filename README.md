@@ -39,3 +39,8 @@ cred to Irfan
 
 ## Church Encodings
 Implementation of church numerals, common logic gates, and basic arithmetic as python functions. These can be used as building blocks for longer lambda calculus functions
+
+## Scheme Lists
+Implementation of common operators involing lists in scheme including: append, len, remove, index, getindex, count, max, min, selection sort, quick sort
+
+These are implemented through recursive functions
