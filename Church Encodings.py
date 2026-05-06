@@ -30,9 +30,18 @@ pair = lambda a: lambda b: lambda f: f(a)(b)
 left = lambda p: p(lambda a: lambda b: a)
 right = lambda p: p(lambda a: lambda b: b)
 
+
+slide = lambda p: pair(right(p))(succ(right(p)))
+pred  = lambda n: left(n(slide)(pair(zero)(zero)))
+
 # Combinators
 U = lambda f: f(f)
 Z = lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v)))
 Y = ((lambda h: lambda F: F(lambda x:h(h)(F)(x)))(lambda h: lambda F: F(lambda x:h(h)(F)(x))))
+Y2 = lambda f: (lambda x: x(x))(lambda x: f(lambda *args: x(x)(*args)))
 
 Y(lambda f: lambda n: 1 if n <= 0 else n*f(n-1))(5)
+
+I = lambda x: x
+K = lambda x: lambda y: x
+S = lambda x: lambda y: lambda z: x(z)(y(z))
