@@ -8,7 +8,11 @@ two = lambda f: lambda x: f(f(x))
 succ = lambda n: lambda f: lambda x: f(n(f(x)))
 plus = lambda m: lambda n: lambda f: lambda x: m(f)(n(f(x)))
 mult = lambda m: lambda n: lambda f: lambda x: m(n(f(x)))
+sub = lambda m: lambda n: n(pred)(m)
 exp = lambda b: lambda n: n(b)
+
+is_zero = lambda n: n(lambda x: f)(t)
+equals = lambda m: lambda n: and_gate(is_zero(sub(m)(n)), is_zero(sub(n)(m)))
 
 church_to_int = lambda n: n(lambda x: x + 1)(0)
 int_to_church = (lambda x: x(x))(lambda f: lambda i: zero if i == 0 else succ(f(f)(i-1)))
@@ -24,6 +28,7 @@ not_gate = lambda x: x(f)(t)
 
 if_then_else = lambda p: lambda a: lambda b: p(a)(b)
 void = lambda x: x
+
 
 # Pairs and tuples
 pair = lambda a: lambda b: lambda f: f(a)(b)
@@ -45,3 +50,6 @@ Y(lambda f: lambda n: 1 if n <= 0 else n*f(n-1))(5)
 I = lambda x: x
 K = lambda x: lambda y: x
 S = lambda x: lambda y: lambda z: x(z)(y(z))
+
+
+fact = Z(lambda f: lambda n: if_then_else(is_zero(n))(one)(mult(n)(f(pred(n)))))
